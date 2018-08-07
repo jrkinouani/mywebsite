@@ -1,2 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+h3.name
+{
+    font-size: 18px;
+    color: #fff;
+}
+.jumbotron.jumbotron-fluid
+{
+  background-color: #ea6d50;
+    margin-top: 50px;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
