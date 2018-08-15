@@ -1,7 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+.navbar-right {
+    float: right !important;
+     margin-right: 0px;
+}
+p.bio
+{
+    color: #fff;
+    font-weight: 400;
+}
 h3.name
 {
     font-size: 18px;
@@ -10,8 +18,28 @@ h3.name
 .jumbotron.jumbotron-fluid
 {
   background-color: #ea6d50;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .rounded-circle {
     border-radius: 50%!important;
+}
+.fa-twitter:before
+{
+    margin-top: 20px;
+    font-size: 40px;
+}
+#reseau.col-md-3
+{
+    padding-top: 50px;
+}
+
+section
+
+{
+    padding: 15px;
+    background-color: #ea6d50;
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 48px;
+    border-radius: 5px;
 }
