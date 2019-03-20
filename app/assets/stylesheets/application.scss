@@ -80,6 +80,7 @@ Navigation
   width: 74px;
   overflow: hidden;
 }
+
 .cd-side-navigation::before {
   /* background color of the side navigation */
   content: '';
@@ -153,6 +154,7 @@ Navigation
   background-color: #ffffff;
   color: #131519;
 }
+
 .cd-side-navigation a.selected > svg *, .no-touch .cd-side-navigation a.selected:hover > svg * {
   stroke: #83b0b9;
 }
@@ -464,4 +466,15 @@ Navigation
   #cd-loading-bar {
     left: 90px;
   }
+}
+.rounded-circle {
+    border-radius: 50%!important;
+		width: 180px;
+		height: 180px;
+}
+h2.name
+{
+		margin-top: 40px;
+		font-size: 30px;
+		font-weight: 300;
 }
