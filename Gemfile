@@ -9,7 +9,7 @@ gem 'jbuilder', '~> 2.5'
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.2.0'
-gem "devise", ">= 4.6.0"
+gem "devise", " 4.6.0"
 gem "sprockets", ">= 3.7.2"
 gem "nokogiri", ">= 1.8.5"
 
