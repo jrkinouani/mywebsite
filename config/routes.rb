@@ -2,9 +2,8 @@ Rails.application.routes.draw do
 
   root :to => "pages#home"
   get "/home" => "pages#home"
-  get "/service" => "pages#service"
-  get "/projets" => "pages#projets"
-  get "/contact" => "pages#contact"
+  get "/contacts/news" => "contacts#new"
+  get "/contacts/create" => "contacts#create"
 
   resources :contacts, only: [:new, :create]
 
