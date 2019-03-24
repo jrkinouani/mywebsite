@@ -10,10 +10,9 @@ gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.2.0'
 gem "devise", " 4.6.0"
-gem "sprockets", ">= 3.7.2"
 gem "nokogiri", ">= 1.8.5"
 
-
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
