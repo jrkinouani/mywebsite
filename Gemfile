@@ -6,11 +6,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem "bootstrap-sass", ">= 3.4.1"
+gem 'bootstrap-sass', ">= 3.4.1"
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.2.0'
-gem "devise", " 4.6.0"
-gem "nokogiri", ">= 1.8.5"
+gem 'devise', " 4.6.0"
+gem 'nokogiri', ">= 1.8.5"
 
 gem 'sprockets', '~> 3.5', '>= 3.5.2'
 
