@@ -5,7 +5,6 @@ class ContactsController < ApplicationController
 
   def create
       @contact = Contact.create(contact_params)
-
     if @contact.save
         AdminMailer.contact(@contact).deliver_now # Je vais expliquer cette ligne juste après...
       redirect_to new_contact_path, flash: {success: (:"Votre message a bien été envoyé et sera traité dans les plus brefs délais.")}
@@ -13,7 +12,6 @@ class ContactsController < ApplicationController
       render :new
     end
   end
-
   private
 
    def contact_params
