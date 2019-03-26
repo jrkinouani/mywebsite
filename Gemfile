@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'sassc'
 gem 'sassc-rails'
+gem 'mail_form'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
