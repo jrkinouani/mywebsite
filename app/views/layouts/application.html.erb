@@ -26,7 +26,22 @@
     sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
      crossorigin="anonymous"></script>
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
+     <script>
+      $('a[href^="#contact"]').click(function(){
+      	var the_id = $(this).attr("href");
+      	$('html, body').animate({
+      		scrollTop:$(the_id).offset().top
+      	}, 'slow');
+      	return false;});
+      </script>
+      <script>
+       $('a[href^="#projet"]').click(function(){
+       	var the_id = $(this).attr("href");
+       	$('html, body').animate({
+       		scrollTop:$(the_id).offset().top
+       	}, 'slow');
+       	return false;});
+       </script>
     <!--<script src="jquery-2.1.4.js"></script>-->
   </body>
 </html>
