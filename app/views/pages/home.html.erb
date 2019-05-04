@@ -1,59 +1,45 @@
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-<div class="container">
- <%= link_to (image_tag("/photo_basket.jpg", class:"navbar-brand", style:"border-radius: 50%!important;width:80px;height:80px;")),root_path %> <h3 class="name">Jean-rodriguez Kinouani</h3>
- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-	 Menu
-	 <i class="fas fa-bars"></i>
- </button>
- <div class="collapse navbar-collapse" id="navbarResponsive">
-	 <ul class="navbar-nav text-uppercase ml-auto">
-     <li class="nav-item">
-			 <a class="nav-link js-scroll-trigger" href="#portfolio" id="#projet">Apropos de moi</a>
-		 </li>
-		 <li class="nav-item">
-			 <a class="nav-link" href="#portfolio" >Mes projets</a>
-		 </li>
-		 <li class="nav-item">
-			 <a class="nav-link " href="#contact" id="#contact">Contact</a>
-		 </li>
-	 </ul>
- </div>
-</div>
-</nav>
-<div class="container">
-	<div class="row">
-	<h1 class="baseline">Développeur web Ruby on Rails</h1> <br> <br><br>
-	<h4 class="punchline">Basé à Saint-Pierre de la Réunion, je suis un développeur web indépendant Ruby on Rails. <br>
-		Si vous souhaitez concrétiser un projet avec un site web contactez-moi.
-	</h4>
-	</div>
-</div>
-</header>
+ <header id="banner" style="background-size: cover;background-position: center center;background-repeat: no-repeat;background-image: url(/projets.jpg);">
+ <div class="banner-text">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Donnez vie à vos projets web</h1>
+        <p class="punchline">Développeur web Ruby on Rails. <br> Je vous aide à rendre réel vos idées de projets web, <br> en les développant pour vous.</p>
+        <p>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+    </div>
+    <div class="dimmer"></div>
+ </header>
+
+
 <section>
-  <div class="container">
-    <h3 class="apropos">Je suis jean-rodriguez kinouani un développeur web Ruby on Rails.
+  <div class="container" id="me" style="width:900px;">
+    <div class="text-center">
+			<h3 class="title_projet">A propos de moi</h3>
+		</div>
+    <h3 class="apropos">Développeur web Ruby on Rails.
        J'ai été formé à l'école Simplon, une fabrique de
-       codeurs, basée en métropôle qui à formé plus de 1000 développeurs. <br> Le langage informatique que j'utilise est un langage
+       codeurs, basée en métropôle qui à formé plus de 1000 développeurs. Le langage informatique que j'utilise est un langage
        très populaire, notamment utilisée pour des sites comme Airbnb, Shopify ou Square.
-       Je peux développer de simples pages web ou des sites plus complexes avec comme
-       fonction un système de paiement, stockage d'images, envoi d'emails automatisé ou
-       la création de système de inscription pour des utilisateurs.
+       Je peux développer de simples pages web ou des sites plus complexes avec des
+       fonctionnalités de paiement, stockage d'images ou l'envoi d'emails automatisé.
 
      </h3>
 
 
      <div class="row">
-       <div class="col-md-4">
+       <div class="col-md-6">
         <div class="text-center">
-          <i class="fab fa-cuttlefish" style="size:30px;"></i>
+           <img src="/laptop.png">
           <h4>Langage</h4>
           <h5>ruby on rails / <br> Javascript <br>/ MysqL(bade de données)</h5>
         </div>
        </div>
-       <div class="col-md-4">
+       <div class="col-md-6">
          <div class="text-center">
-
+           <img src="/browser.png">
            <h4>Mes outils </h4>
            <h5>Héroku (serveur) <br>
             Github(sauvegarde du code)<br>
@@ -62,29 +48,19 @@
             sendgrid(envoi emails)</h5>
          </div>
        </div>
-       <div class="col-md-4">
-         <div class="text-center">
-           <h4>Mes outils </h4>
-           <h5>Héroku (serveur) <br> /Github(sauvegarde du code)<br>
-            / Amazon S3 (stockage images et vidéos) <br>
-            /Stripe(sys.paiement) <br>
-            /sendgrid(envoi emails)</h5>
-         </div>
-       </div>
      </div>
   </div>
-	<div class="container" id="#projet">
+	<div class="container" id="projet">
 		<div class="text-center">
 			<h3 class="title_projet">Mes projets</h3>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="card"  >
-		  <img class="img-responsive" src="/permisapoints.png" alt="Card image cap" style="border: 1px solid #868686;
-	    border-radius: 3px;">
+		  <img class="img-responsive" src="/permisapoints.jpg" alt="Card image cap" >
 			<br>
 		</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-12 col-xs-12">
 			<a href="https://www.permisapoints974.re/" class="title-site" target="_blank">PERMISAPOINTS974</a>
 			<p class="description">
 				Persmisàpoints974 est un site web stage de récuparation de points <br> sur l'île de la reunion
@@ -106,14 +82,13 @@
      <hr >
     </div>
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <div class="card"  >
-      <img class="img-responsive" src="/swimnatation.png" alt="Card image cap" style="border: 1px solid #868686;
-      border-radius: 3px;">
+      <img class="img-responsive" src="/swimnatation.jpg" alt="Card image cap">
       <br>
     </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <a href="https://www.swimnatation.com/" class="title-site" target="_blank">SWIMNATATION</a>
       <p class="description">
         Swimnatation est un club de natation
@@ -136,14 +111,13 @@
   </div>
 
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <div class="card"  >
-      <img class="img-responsive" src="/bibliorun.png" alt="Card image cap" style="border: 1px solid #868686;
-      border-radius: 3px;">
+      <img class="img-responsive" src="/bibliorun.jpg" alt="Card image cap" >
       <br>
     </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <a href="https://bibliorun.herokuapp.com/" class="title-site" target="_blank">BIBLIORUN</a>
       <p class="description">
         Biliorun est un site de partage de livre <br>exclusivment réservé aux élèves du collège Dina morgabine <br>de Saint-Pierre
@@ -165,14 +139,13 @@
   </div>
 
   <div class="container" style="margin-bottom:90px;">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <div class="card"  >
-      <img class="img-responsive" src="/caviarauto.png" alt="Card image cap" style="border: 1px solid #868686;
-      border-radius: 3px;">
+      <img class="img-responsive" src="/caviarauto.jpg" alt="Card image cap">
       <br>
     </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12 col-xs-12">
       <a href="http://www.caviarauto.re/" class="title-site" target="_blank">CAVIARAUTO</a>
       <p class="description">
         Site de location de voiture

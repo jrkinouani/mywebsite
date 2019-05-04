@@ -1,58 +1,82 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+.banner-text {
+    max-width: 1200px;
+    color: white;
+    z-index: 99999999;
+}
+#banner {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 85vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    z-index: 199;
+}
+.dimmer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 50;
+    background-color: rgba( 16, 15, 15, 0.35);
+    z-index: 1;
+}
 header{
-	 background-image: url("/laptop-dark.jpg");
-	 height: 600px;
+	 background-image: url("/image-site-perso.jpg");
+	 height: 700px;
    width: 100%;
 	 background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.navbar-nav {
+/*.navbar-nav {
     float: right;
     margin: 0;
-}
+		color: black;
+} */
 h3.name
 {
     font-weight: 800;
     font-size: 17px;
     padding-bottom: 5px;
     letter-spacing: -1px;
-    color: #fff ;
+    color: #FFFFFF;
 		font-family: 'Roboto', sans-serif;
-    }
-
-.navbar-dark .navbar-nav .nav-link
-{
-  text-decoration: none;
-  font-weight: 800;
-  color: #FFF;
-  font-size: 13px;
-  padding:  32px 40px;
-    }
-.nav-link.js-scroll-trigger
-{
-    border-bottom: 4px solid #ff0047;
+  }
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: transparent;
 }
-h1.baseline
+h1.jumbotron-heading
 {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 150px;
 		margin-left: 15px;
 		margin-right: 15px;
 		font-family: 'Roboto', sans-serif;
+		text-align: center!important;
+		font-weight: bold;
 }
-h4.punchline
+p.punchline
 {
 		color: #FFF;
-		font-size: 18px;
+		font-size: 23px;
     line-height: 26px;
 		font-weight: 300;
 		margin-left: 15px;
 		margin-right: 15px;
+		margin-top: 30px;
 		font-family: 'Source Sans Pro', sans-serif;
 }
 /*section */
@@ -65,7 +89,9 @@ h3.apropos
 {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 23px;
-		font-weight: 300;
+		font-weight: 100;
+		text-align: justify;
+		margin-bottom: 60px;
 }
 .card
 {
@@ -208,4 +234,99 @@ aside.contact
     background-color: #0062cc;
     border: none;
     cursor: pointer;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+			width: 260px;
+}
+
+
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+		 z-index: 5000 !important;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
 }
