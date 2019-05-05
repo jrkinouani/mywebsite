@@ -13,4 +13,8 @@ class PagesController < ApplicationController
   def service
 
   end
+
+  def formulaire
+
+  end
 end

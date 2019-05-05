@@ -5,7 +5,7 @@
         <h1 class="jumbotron-heading">Donnez vie à vos projets web</h1>
         <p class="punchline">Développeur web Ruby on Rails. <br> Je vous aide à rendre réel vos idées de projets web, <br> en les développant pour vous.</p>
         <p>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+         <%= button_to "Parlez moi de votre projet", formulaire_path, class: "btn btn-secondary btn-lg" , :method => :get  %>
         </p>
       </div>
     </section>
@@ -13,46 +13,173 @@
     <div class="dimmer"></div>
  </header>
 
+ <!-- Team -->
+ <section id="team" class="pb-5">
+     <div class="container">
+         <h5 class="section-title h1">A propos</h5>
+         <h3 class="apropos">Développeur web Ruby on Rails.
+            J'ai été formé à l'école Simplon, une fabrique de
+            codeurs qui à formé plus de 1000 développeurs. Le langage informatique que j'utilise est un langage
+            très populaire, notamment utilisé pour des sites comme Airbnb, Shopify ou Square.
+            Je peux développer de simples pages web ou des sites plus complexes avec des
+            fonctionnalités de paiement, de stockage d'images ou l'envoi d'emails automatisé.
 
+          </h3>
+         <div class="row">
+             <!-- Team member -->
+             <div class="col-xs-12 col-sm-6 col-md-4">
+                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                         <div class="frontside">
+                             <div class="card">
+                                 <div class="card-body text-center">
+                                     <p><img img class=" img-fluid" src="/laptop.png"  alt="card image"></p>
+                                     <h4 class="card-title">Mes langages</h4>
+                                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="backside">
+                             <div class="card">
+                                 <div class="card-body text-center mt-4">
+                                     <h4 class="card-title">Mes langages</h4>
+                                     <p class="card-text">J'utilise plusieurs langages populaires et solides pour le développpement </p>
+
+                                     <ul class="list-inline" >
+                                         <li class="list-inline-item" style="float:left!important;">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                               <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"> Ruby on rails
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item" style="float:left!important;">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 <img src="https://img.icons8.com/color/48/000000/html-5.png"> html 5
+                                             </a>
+                                         </li>
+
+                                         <li class="list-inline-item" style="float:left!important;">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <img src="https://img.icons8.com/color/48/000000/css3.png">  CSS 3
+                                               </a>
+                                         </li>
+                                         <li class="list-inline-item" style="float:left!important;">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 <img src="https://img.icons8.com/color/48/000000/mysql.png">MysqL: base de données
+                                             </a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- ./Team member -->
+             <!-- Team member -->
+             <div class="col-xs-12 col-sm-6 col-md-4">
+                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                         <div class="frontside">
+                             <div class="card">
+                                 <div class="card-body text-center">
+                                     <p><img img class=" img-fluid" src="/photo_basket.jpg"  alt="card image"></p>
+                                     <h4 class="card-title">Methode de travail</h4>
+                                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="backside">
+                             <div class="card">
+                                 <div class="card-body text-center mt-4">
+                                     <h4 class="card-title">Ma méthode</h4>
+                                     <p class="card-text">Ma méthode de travail se déroule en 4 étapes</p>
+                                     <ul class="list-inline">
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            *  Analyses du besoin
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                * Design et Prototype
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 * Développement et tests
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 * Déploiement et maintenance
+                                             </a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- ./Team member -->
+             <!-- Team member -->
+             <div class="col-xs-12 col-sm-6 col-md-4">
+                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                     <div class="mainflip">
+                         <div class="frontside">
+                             <div class="card">
+                                 <div class="card-body text-center">
+                                     <p><img class=" img-fluid" src="/browser.png" alt="card image"></p>
+                                     <h4 class="card-title">Mes outils</h4>
+                                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="backside">
+                             <div class="card">
+                                 <div class="card-body text-center mt-4">
+                                     <h4 class="card-title">Mes Outils </h4>
+                                     <p class="card-text"> Pour développer des sites modernes, j'utilise ses outils pour éffectuer des tâches répétitves mais essentielles</p>
+                                     <ul class="list-inline">
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <img src="https://img.icons8.com/color/48/000000/heroku.png">                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <img src="https://img.icons8.com/color/48/000000/github.png">
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png">
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 <img src="https://img.icons8.com/color/48/000000/sent.png">
+                                             </a>
+                                         </li>
+                                         <li class="list-inline-item">
+                                             <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                 <img src="https://img.icons8.com/color/48/000000/stripe.png">
+                                             </a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- ./Team member -->
+   </div>
+   </div>
+  </section>
 <section>
-  <div class="container" id="me" style="width:900px;">
-    <div class="text-center">
-			<h3 class="title_projet">A propos de moi</h3>
-		</div>
-    <h3 class="apropos">Développeur web Ruby on Rails.
-       J'ai été formé à l'école Simplon, une fabrique de
-       codeurs, basée en métropôle qui à formé plus de 1000 développeurs. Le langage informatique que j'utilise est un langage
-       très populaire, notamment utilisée pour des sites comme Airbnb, Shopify ou Square.
-       Je peux développer de simples pages web ou des sites plus complexes avec des
-       fonctionnalités de paiement, stockage d'images ou l'envoi d'emails automatisé.
-
-     </h3>
-
-
-     <div class="row">
-       <div class="col-md-6">
-        <div class="text-center">
-           <img src="/laptop.png">
-          <h4>Langage</h4>
-          <h5>ruby on rails / <br> Javascript <br>/ MysqL(bade de données)</h5>
-        </div>
-       </div>
-       <div class="col-md-6">
-         <div class="text-center">
-           <img src="/browser.png">
-           <h4>Mes outils </h4>
-           <h5>Héroku (serveur) <br>
-            Github(sauvegarde du code)<br>
-            Amazon S3 (stockage images et vidéos) <br>
-            Stripe(sys.paiement) <br>
-            sendgrid(envoi emails)</h5>
-         </div>
-       </div>
-     </div>
-  </div>
 	<div class="container" id="projet">
 		<div class="text-center">
-			<h3 class="title_projet">Mes projets</h3>
+		<h5 class="section-title h1"> projets réalisés</h5>
 		</div>
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="card"  >
@@ -63,7 +190,7 @@
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<a href="https://www.permisapoints974.re/" class="title-site" target="_blank">PERMISAPOINTS974</a>
 			<p class="description">
-				Persmisàpoints974 est un site web stage de récuparation de points <br> sur l'île de la reunion
+				Persmisàpoints974 permet de participer à des stages de récuparation de points pour le permis de conduire sur l'île de la reunion
 			</p>
 			<ul class="skills">
 				<li><font style="vertical-align: inherit;">
@@ -91,7 +218,7 @@
     <div class="col-md-6 col-sm-12 col-xs-12">
       <a href="https://www.swimnatation.com/" class="title-site" target="_blank">SWIMNATATION</a>
       <p class="description">
-        Swimnatation est un club de natation
+        Swimnatation est un club de natation pour enfants et adultes désirant apprendre à nager ou améliorer leur technique.
       </p>
       <ul class="skills">
         <li><font style="vertical-align: inherit;">
@@ -148,7 +275,7 @@
     <div class="col-md-6 col-sm-12 col-xs-12">
       <a href="http://www.caviarauto.re/" class="title-site" target="_blank">CAVIARAUTO</a>
       <p class="description">
-        Site de location de voiture
+        Caviarauto est un site de location de voiture qui s'adresse aux particuliers et aux touristes en voyage sur l'île de la Réunion
       </p>
       <ul class="skills">
         <li><font style="vertical-align: inherit;">
@@ -162,7 +289,6 @@
           </li>
         </ul>
     </div>
-  </div>
 </section>
 
 

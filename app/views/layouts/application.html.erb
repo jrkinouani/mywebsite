@@ -24,13 +24,13 @@
           <i class="fa fa-bars fa-2x"></i>
        </div>
        <div class="logo">
-         <%= link_to (image_tag("/photo_basket.jpg", class:"navbar-brand", style:"border-radius: 50%!important;width:80px;height:80px;")),root_path %> <h3 class="name">Jean-Rodriguez Kinouani</h3>
+         <%= link_to (image_tag("/photo_basket.jpg", class:"navbar-brand", style:"border-radius: 50%!important;width:80px;height:80px;")),root_path %> <h3 class="name">Jean-Rodriguez Kinouani <br><b style="color:#FFFFFF;font-size:23px;">Développeur web fullstack</b></h3>
 
        </div>
        <div class="menu">
           <ul>
             <li class="nav-item">
-      			 <a class="nav-link js-scroll-trigger" href="#me">Apropos de moi</a>
+      			 <a class="nav-link js-scroll-trigger" href="#me">A propos de moi</a>
       		 </li>
       		 <li class="nav-item">
       			 <a class="nav-link" href="#projet">Mes projets</a>
@@ -38,6 +38,7 @@
       		 <li class="nav-item">
       			 <a class="nav-link " href="#contact" id="#contact">Contact</a>
       		 </li>
+           <li>         <%= button_to "Parlez moi de votre projet", formulaire_path, class: "btn btn-secondary btn-lg nav" , :method => :get  %></li>
           </ul>
        </div>
     </nav>
