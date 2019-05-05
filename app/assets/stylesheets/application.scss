@@ -126,7 +126,7 @@ p.punchline
 		margin-left: 15px;
 		margin-right: 15px;
 		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 		font-family: 'Source Sans Pro', sans-serif;
 }
 /*section */
@@ -170,6 +170,7 @@ h3.title_projet
 		font-size: 50px;
 		font-family: 'Roboto', sans-serif;
 }
+
 a.title-site
 {
 		color: #303030;
@@ -229,7 +230,7 @@ aside.contact
 {
     padding-top: 60px;
 		background-color: black;
-		height: 950px;
+		height: 1050px;
 	  font-family: 'Roboto', sans-serif;
 }
 
@@ -527,7 +528,7 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 212px;
 }
 
 .backside .card a {
@@ -541,7 +542,13 @@ section .section-title {
 }
 
 .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+}
+a#by
+
+{
+
+    color: #fff;
 }
